@@ -42,6 +42,10 @@ function fly(robot) {
     })
 
     after(9*1000, function() {
+        bot.drone.up(0.1);
+    })
+
+    after(9*1000, function() {
         bot.drone.front(0.1);
     })
 
