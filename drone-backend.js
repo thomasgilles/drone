@@ -32,32 +32,32 @@ function fly(robot) {
     bot.drone.ftrim();
     bot.drone.takeoff();
 
-    after(1 * 1000, function() {
+
+    after(3 * 1000, function() {
         bot.drone.up(0.1);
     });
 
-    after(2 * 1000, function() {
-        bot.drone.left(0.1);
-    });
-
-    after(4*1000, function() {
-        bot.drone.front(0.2);
+    after(6*1000, function() {
+        bot.drone.front(0.1);
     })
 
-    after(5.5*1000, function() {
-        bot.drone.right(0.2);
-    })
-
-    after(8*1000, function() {
-        bot.drone.back(0.2);
-    })
-
-    after(8*1000, function() {
-        bot.drone.left(0.1);
+    after(7.5*1000, function() {
+        bot.drone.down(0.1);
     })
 
     after(9*1000, function() {
-        bot.drone.land(0.2);
+        bot.drone.up(0.1);
+    })
+
+    after(12*1000, function() {
+        bot.drone.back(0.1);
+    })
+
+    after(15*1000, function() {
+        bot.drone.down(0.1)
+    }
+    after(16*1000, function() {
+        bot.drone.land(0.1);
     })
 
     after(11*1000, function() {
@@ -74,9 +74,3 @@ Cylon.start();
 
 
 
-bot.drone.takeoff();
-
-after(10*1000, function(){
-
-   bot.drone.land();
-});
