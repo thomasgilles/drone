@@ -33,9 +33,9 @@ function fly(robot) {
     bot.drone.takeoff();
 
 
-    after(3 * 1000, function() {
+   /* after(3 * 1000, function() {
         bot.drone.up(0.1);
-    });
+    });*/
 
     after(6 * 1000, function() {
         bot.drone.hover(0.1);
