@@ -41,13 +41,17 @@ function fly(robot) {
         bot.drone.hover(0.4);
     })
 
-    after(3*1000,function() {
+    after(9*1000,function() {
         bot.drone.up(0.5)
     })
 
-    after(3*1000,function() {
+    after(12*1000,function() {
             bot.drone.frontFlip()
         })
+
+    after(15*1000,function() {
+        bot.drone.land
+    })
 
 }
 Cylon.start();
