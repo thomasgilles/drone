@@ -36,15 +36,15 @@ function fly(robot) {
         bot.drone.up(0.1);
     });
 
-    after(2.5 * 1000, function() {
+    after(2 * 1000, function() {
         bot.drone.left(0.1);
     });
 
-    after(4.5*1000, function() {
-        bot.drone.forward(0.2);
+    after(4*1000, function() {
+        bot.drone.front(0.2);
     })
 
-    after(6*1000, function() {
+    after(5.5*1000, function() {
         bot.drone.right(0.2);
     })
 
@@ -52,11 +52,11 @@ function fly(robot) {
         bot.drone.back(0.2);
     })
 
-    after(9*1000, function() {
+    after(8*1000, function() {
         bot.drone.left(0.1);
     })
 
-    after(10*1000, function() {
+    after(9*1000, function() {
         bot.drone.land(0.2);
     })
 
@@ -66,3 +66,17 @@ function fly(robot) {
 }
 
 Cylon.start();
+
+
+
+
+
+
+
+
+bot.drone.takeoff();
+
+after(10*1000, function(){
+
+   bot.drone.land();
+});
