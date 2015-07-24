@@ -38,36 +38,36 @@ function fly(robot) {
     });*/
 
     after(6 * 1000, function() {
-        bot.drone.hover(0.1);
+        bot.drone.hover(0.4);
     })
 
     after(9*1000, function() {
-        bot.drone.up(0.1);
+        bot.drone.up(0.4);
     })
 
     after(12*1000, function() {
-        bot.drone.front(0.1);
+        bot.drone.front(0.4);
     })
 
     after(13.5*1000, function() {
-        bot.drone.down(0.1);
+        bot.drone.down(0.4);
     })
 
     after(16.5 * 1000, function() {
-            bot.drone.hover(0.1);
+            bot.drone.hover(0.4);
 
     })
 
     after(18*1000, function() {
-        bot.drone.up(0.1);
+        bot.drone.up(0.4);
     })
 
     after(21*1000, function() {
-        bot.drone.back(0.1);
+        bot.drone.back(0.4);
     })
 
     after(24*1000, function() {
-        bot.drone.down(0.1)
+        bot.drone.down(0.4)
     })
     after(27*1000, function() {
         bot.drone.land(0.1);
