@@ -42,32 +42,32 @@ function fly(robot) {
     })
 
     after(9*1000, function() {
-        bot.drone.up(0.4);
+        bot.drone.up(0.6);
     })
 
     after(12*1000, function() {
-        bot.drone.front(0.4);
+        bot.drone.front(0.6);
     })
 
     after(13.5*1000, function() {
-        bot.drone.down(0.4);
+        bot.drone.down(0.6);
     })
 
     after(16.5 * 1000, function() {
-            bot.drone.hover(0.4);
+            bot.drone.hover(0.6);
 
     })
 
     after(18*1000, function() {
-        bot.drone.up(0.4);
+        bot.drone.up(0.6);
     })
 
     after(21*1000, function() {
-        bot.drone.back(0.4);
+        bot.drone.back(0.6);
     })
 
     after(24*1000, function() {
-        bot.drone.down(0.4)
+        bot.drone.down(0.6)
     })
     after(27*1000, function() {
         bot.drone.land(0.1);
